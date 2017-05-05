@@ -21,9 +21,11 @@ function start() {
     var walker  = walk.walk(folder, { followLinks: false });
 
     walker.on('file', function(root, stat, next) {
+      var replacer = folder+'/';
+      var subPath = (root === folder ? '' : root.replace(replacer, ''));
       files.push({
         "time": stat.birthtime.getTime(),
-        "name": stat.name,
+        "name": subPath.length > 0 ? subPath + '/' + stat.name : stat.name,
         "size": stat.size
       });
       return next();
