@@ -1,0 +1,35 @@
+{
+  "name": "file-server",
+  "description": "Node.js file server to retrieve static files over http",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "express": "4.15.2",
+    "log4js": "1.1.1",
+    "walk": "2.3.9"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "file-server"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phagunbaya/file-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phagunbaya/file-server/issues"
+  },
+  "contributors": [
+    "Phagun Baya <phagun.baya@gmail.com>"
+  ],
+  "homepage": "http://phagunbaya.com/",
+  "license": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/phagunbaya/file-server/raw/master/LICENSE"
+    }
+  ]
+}
