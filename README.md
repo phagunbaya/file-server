@@ -1,13 +1,29 @@
-# file-server
+# node-file-server
 Node.js file server to retrieve static files over http
+
+## Install
+
+```
+npm install -g node-file-server
+```
+
+## Start server
+
+```
+npm start
+```
 
 ## Operations
 
+```
 GET /
 List all the files
+```
 
+```
 GET /<file-name>
 Get content of a particular file
+```
 
 ## Options
 
